@@ -1,0 +1,285 @@
+mixin slide(classNames)
+  if classNames
+    section(class=classNames, data-bespoke-backdrop='backdrop ' + classNames.split(' ').map(function(className) { return 'backdrop--' + className; }).join(' '))
+      block
+  else
+    section
+      block
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Curso Tecnologías Emergentes en Salud - Presentación y Programa
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      +slide('purple')
+        h1
+          | Curso Tecnologías Emergentes en Salud
+          br
+          span.subtitle Presentación y Programa
+        h3
+          | Jaime Andrés García
+          br
+          | Universidad CES
+          br
+          | Medellín, 2018
+      +slide('purple cascade')
+        h1 Objetivo General (1/2)
+          p
+            | Promover el empleo de la vigilancia tecnológica y el análisis de tecnologías emergentes como disciplinas científicas que permiten la construcción tecnológica y social del futuro mediante la identificación de los escenarios actuales y potenciales futuros de la ciencia, tecnología y la sociedad.
+      +slide('purple cascade')
+        h1 Objetivo General (2/2)
+          p
+            | Se desarrollarán las capacidades del monitoreo y vigilancia sistemática de los aspectos sociales, económicos, políticos y tecnológicos que afectan el desarrollo de programas, proyectos y productos.
+      +slide('purple cascade')
+        h1 Objetivos (1/3)
+          p
+            | Como resultado del curso, el o la estudiante estará en capacidad de:
+          p
+            | 1. Realizar análisis del contexto general social, político y económico asociado a una investigación de vigilancia tecnológica y análisis de tecnologías emergentes
+          p
+            | 2. Desarrollar análisis de investigación a partir de la construcción de ecuaciones de búsqueda y el análisis de minería de texto
+      +slide('purple cascade')
+        h1 Objetivos (2/3)
+        p
+          | 3. Desarrollar análisis de patentes a partir de la revisión sistemática y el uso de técnicas de análisis y visualización de datos
+        p
+          | 4. Presentar informes de estudios de vigilancia tecnológica fáciles de consumir a partir de visualizaciones de datos e infográficos
+      +slide('purple cascade')
+        h1 Objetivos (3/3)
+        p
+          | 5. Formular proyectos para el desarrollo de estudios de vigilancia tecnológica y análisis de tecnologías emergentes
+        p
+          | 6. Examinar y evaluar estudios de vigilancia tecnológica y análisis de tecnologías emergentes realizados por consultores, empresas, gobiernos, etc.
+      +slide('blue cascade')
+        h1 Contenido del Curso
+        p
+          | 1. Vigilancia Tecnológica y Análisis de Tecnologías Emergentes - Análisis del Entorno (Environmental Scanning)
+        p
+          | 2. Vigilancia Tecnológica y Análisis de Tecnologías Emergentes  - Análisis de Investigaciones
+        p
+          | 3. Vigilancia Tecnológica y Análisis de Tecnologías Emergentes  - Análisis de Patentes
+      +slide('green cascade')
+        h1 Evaluación del Curso
+        p
+          | Análisis del Entorno y Contexto General
+          strong  (30 %)
+        p
+          | Análisis de Investigaciones
+          strong  (35 %)
+        p
+          | Análisis de Patentes - Exposición - Infográfico
+          strong  (35 %)
+      +slide('blue cascade')
+        h1 Introdución - Descripción de Trabajo
+        h2 Technology Foresight is systematically attempting
+        h2 to look in long-term future science, technology,
+        h2 economy, society to identify strategic areas
+        h2 and emerging technologies
+        h6 (Martin, 1995)
+      +slide('cascade')
+        h2 Infográficos - Resultados Vigilancia y Análisis - Entrega 3
+        img(src="images/mckinsey-global-institute-12-disruptive-technologies_5277d72d35513_w1500.png",width="66%")
+        h6 (Tay, 2013)
+      +slide('cascade')
+        h2 Infográficos - Resultados Vigilancia y Análisis - Entrega 3
+        img(src="images/autonomous-cars.jpg",width="50%")
+        h6 (KMPG, 2015)
+      +slide('black cascade')
+        h3 Infográficos - Resultados Vigilancia y Análisis - Entrega 3
+        img(src="images/health-technology-evolution.png",width="45%")
+        h6 (EnvionsingTech, 2012)
+      +slide('black cascade')
+        h3 Infográficos - Resultados Vigilancia y Análisis - Entrega 3
+        img(src="images/fourth-revolution.png",width="66%")
+        h6 (EnvionsingTech, 2012)
+      +slide('blue cascade')
+        h1 Infográficos - Herramientas
+        h2 Inspiración: http://www.myforesight.my/
+        h2 1 página - Diseño Libre
+        h2 Creación: PiktoChart, Infogram, Canva
+      +slide('blue cascade')
+        h1 Vigilancia Tecnológica
+        h2 Technology Watch consists in systematically capturing, analysing, disseminating
+        h2 and exploiting useful technical information
+        h2 for the watch and growth of a company
+        h6 (Escorsa, 2001)
+      +slide('cascade')
+        h2 Análisis de Patentes - Lista y Descripción de Patentes
+        img(src="images/top-patentes.PNG",width="50%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Análisis de Patentes - Lista y Descripción de Inventores
+        img(src="images/patentes-inventores.PNG",width="35%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Análisis de Patentes - Lista y Descripción de Empresas Publicadoras
+        img(src="images/patentes-empresas.PNG",width="40%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Análisis de Patentes - Periodo y Número de registros totales
+        img(src="images/patentes-totales.PNG",width="50%")
+        h6 (Garcia, 2018)
+      +slide('blue cascade')
+        h1 Patentes - Herramientas
+        h2 Búsqueda y Análisis: Lens, PatentScope, Google Patents
+        br
+        h2 Otras: https://wipo-analytics.github.io/databases.html
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Top Investigaciones
+        img(src="images/vos-viewer-top-investigaciones.jpeg",width="50%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Conceptos, Herramientas y Tecnologías Claves
+        img(src="images/vantage-point-concept-keywords.jpeg",width="50%")
+        h6 (Arango, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Conceptos, Herramientas y Tecnologías Claves
+        img(src="images/vos-viewer-concept-keywords.jpeg",width="50%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Árbol de Investigaciones
+        img(src="images/investigaciones-arbol.png",width="50%")
+        h6 (Arango, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Análisis de Países
+        img(src="images/vos-viewer-paises.jpeg",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Análisis de Instituciones
+        img(src="images/investigaciones-instituciones.png",width="50%")
+        h6 (Arango, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Publicaciones por Año
+        img(src="images/investigaciones-ano.png",width="50%")
+        h6 (Arango, 2018)
+      +slide('cascade')
+        h2 Análisis de Investigaciones - Ecuación de Búsqueda
+        img(src="images/investigacion-ecuacion-busqueda.png",width="45%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Metodología de Vigilancia Tecnológica
+        img(src="images/metodologia-vigilancia.png",width="66%")
+        h6 (Bernhardt, 1994)
+      +slide('blue cascade')
+        h1 Investigaciones - Herramientas
+        h2 Análisis y Vis: Vos Viewer, CitNetExplorer, Gephi, Tree of Science, Tableau, PiktoChart, Infogram
+        br
+        h2 Búsqueda: Scopus, Web of Science, IEEE Xplore, Pubmed, Ovid, UptoDate
+      +slide('cascade')
+        h2 Principales Noticias Sociales, Económicas, Políticas y Científicas relacionadas
+        img(src="images/ibm-watson-new-visualization.PNG",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Principales Noticias Sociales, Económicas, Políticas y Científicas relacionadas
+        img(src="images/ibm-watson-new-visualization-2.PNG",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Principales Noticias Sociales, Económicas, Políticas y Científicas relacionadas
+        img(src="images/news-retail-timeline.PNG",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Principales Noticias Sociales, Económicas, Políticas y Científicas relacionadas
+        img(src="images/news-noticias-generales.PNG",width="40%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Creación de Feed de Noticias
+        img(src="images/flipboard.png",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Principales Organizaciones relacionadas junto a los bienes o servicios
+        img(src="images/organizaciones-servicios.png",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Principales Publicaciones en Redes Sociales
+        img(src="images/hootsuite.png",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Creación de Alertas de Búsqueda (En cada entrega actualizar)
+        img(src="images/google-alerts.PNG",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Tendencias de Búsqueda (Al menos 10)
+        img(src="images/news-google-trends.PNG",width="66%")
+        h6 (Garcia, 2018)
+      +slide('cascade')
+        h2 Términos de Búsqueda Inicial y Evolución
+        img(src="images/terminos-busqueda-google.png",width="66%")
+        h6 (Garcia, 2018)
+      +slide('blue cascade')
+        h1 Análisis del Entorno - Herramientas
+        h2 Análisis y Vis: Google Search, Google Trends, IBM Watson News Explorer, Unfiltered News, Newsmap
+        br
+        h2 Monitoreo: Hootsuite, Google Alerts, FlipBoard, Google News Stand, Google Chrome
+      +slide('red cascade')
+        h1 Pautas de Evaluación
+        a(href='https://docs.google.com/document/d/1znbAeTLoywWfYjgkM3wL7n_LHgRiJUVbOt2kJbDEHr0/edit', target='_blank') Pautas Entrega 1
+        br
+        a(href='https://docs.google.com/document/d/1up2ZtB9fareAq-KefQv9x9VToXIlhMZtYFbDblJ2-CQ/edit', target='_blank') Pautas Entrega 2
+        br
+        a(href='https://docs.google.com/document/d/1kNy3qJb8F70gneVrs4mm2IiSz4WzIn2u0qxxlGi8LWc/edit', target='_blank') Pautas Entrega 3
+      +slide('cascade')
+        h2 Vigilancia, Prospectiva y Roadmapping
+        img(src="images/vt-pt-rt.PNG",width="66%")
+        h6 (Escorsa, 2001)
+      +slide('cascade')
+        h2 Prospectiva - Escenarios (No hace parte del trabajo)
+        img(src="images/escenarios.png",width="60%")
+        h6 (Gausemeier, 1998)
+      +slide('cascade')
+        h2 Análisis Morfológico
+        img(src="images/morfologico-1.png",width="50%")
+        h6 (Gausemeier, 1998)
+      +slide('cascade')
+        h2 Construcción de Escenarios
+        img(src="images/construccion-escenarios.png",width="40%")
+        h6 (Godet, 2018)
+      +slide('cascade')
+        h2 Radar de Variables
+        img(src="images/radar.png",width="70%")
+        h6 (Godet, 2018)
+      +slide('cascade')
+        h2 Matriz de Influencia
+        img(src="images/micmac.png",width="50%")
+        h6 (Godet, 2007)
+      +slide('cascade')
+        h2 Lista de Variables (Mínimo 30)
+        img(src="images/lista-variables.png",width="70%")
+        h6 (Godet, 2007)
+      +slide('cascade')
+        img(src="images/metodologia-prospectiva.png",width="38%")
+        h6 (Godet - Metodología Prospectiva, 2007)
+      +slide('blue cascade')
+        h1 Prospectiva - Herramientas
+        h2 Guía: http://es.laprospective.fr/Actualidades/151-El-Manual-de-Prospectiva-Estrat%C3%A9gica.html
+        br
+        h2 MICMAC: http://www.micmacprospective.com/en
+        br
+        h2 MORPHOL y ESCENARIOS: http://www.scenaringtools.com/en
+      +slide('white cascade references')
+        h1 Bibliografía
+        p Coates, V., Farooque, M., Klavans, R., Lapid, K., Linstone, H. A., Pistorius, C., & Porter, A. L. (2001). On the Future of Technological Forecasting. Technological Forecasting and Social Change, 67(1), 1–17. doi:10.1016/S0040-1625(00)00122-0
+        p Kostoff, R. N., & Schaller, R. R. (2001). Science and technology roadmaps. Engineering Management, IEEE Transactions on, 48(2), 132–143.
+        p Lucheng, H., Xin, L., & Wenguang, L. (2010). Research on emerging technology selection and assessment by technology foresight and fuzzy consistent matrix. foresight, 12(2), 77–89. doi:10.1108/14636681011035762
+        p Martin, B. R. (1995). Foresight in science and technology. Technology Analysis & Strategic Management, 7(2), 139–168.
+      +slide('white cascade references')
+        h1 Bibliografía
+        p The Washington Post. (2009, January 4). The Next Next Things. Retrieved mayo 2, 2012, from http://www.washingtonpost.com/wp-srv/opinions/outlook/nextthings/
+        p Martino, J. P. (2003). A review of selected recent advances in technological forecasting. Technological Forecasting and Social Change, 70(8), 719–733.
+        p Porter, A. L., Cunningham, S. W., Roper, A. T., Banks, J., Mason, T. W., & Rossini, F. A. (2011). Forecasting and Management of Technology. John Wiley & Sons.
+        p Kostoff, R. N., & Schaller, R. R. (2001). Science and technology roadmaps. Engineering Management, IEEE Transactions on, 48(2), 132–143.
+      +slide('white cascade references')
+        h1 Bibliografía
+        p Gausemeier, J., Fink, A., & Schlake, O. (1998). Scenario Management: An Approach to Develop Future Potentials. Technological Forecasting and Social Change, 59(2), 111–130. doi:10.1016/S0040-1625(97)00166-2
+        p Islam, T., & Meade, N. (1997). The diffusion of successive generations of a technology: A more general model. Technological Forecasting and Social Change, 56(1), 49–60. doi:10.1016/S0040-1625(97)00030-9
+        p Phaal, R., Farrukh, C. J. P., & Probert, D. R. (2004). Technology roadmapping—A planning framework for evolution and revolution. Technological Forecasting and Social Change, 71(1–2), 5–26. doi:10.1016/S0040-1625(03)00072-6
+        p Ryu, J., & Byeon, S. C. (2011). Technology level evaluation methodology based on the technology growth curve. Technological Forecasting and Social Change, 78(6), 1049–1059. doi:10.1016/j.techfore.2011.01.003
+        p Shin, T. (1998). Using Delphi for a Long-Range Technology Forecasting, and Assessing Directions of Future R&D Activities The Korean Exercise. Technological Forecasting and Social Change, 58(1–2), 125–154. doi:10.1016/S0040-1625(97)00053-X
+    script(src='build/build.js')
